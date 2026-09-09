@@ -1,0 +1,6 @@
+{
+  "name": "Explore Bharat – Explore India",
+  "description": "Explore Bharat - A simple and attractive static travel and tourism website showcasing beautiful destinations across India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

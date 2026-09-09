@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Bharat – Explore India</title>
+  <meta name="description" content="Explore Bharat - A simple and attractive static travel and tourism website showcasing beautiful destinations across India.">
+  <meta property="og:title" content="Explore Bharat – Explore India">
+  <meta property="og:description" content="Discover beautiful destinations, rich culture and unforgettable experiences across India with Explore Bharat.">
+  <meta property="og:type" content="website">
+  
+  <!-- Custom CSS (Pure CSS3, No external frameworks) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       1. HEADER / NAVIGATION BAR
+       ====================================================================== -->
+  <header id="mainHeader" class="header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" id="brandLogo" class="brand-logo" aria-label="Explore Bharat Home">
+        <span class="brand-name">Explore Bharat</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav id="navMenu" class="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#destinations" class="nav-link">Destinations</a>
+        <a href="#packages" class="nav-link">Packages</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#tips" class="nav-link">Travel Tips</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       2. HOME / HERO SECTION
+       ====================================================================== -->
+  <section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge">🇮🇳 Explore Bharat</span>
+      <h1 id="heroTitle" class="hero-title">Explore India</h1>
+      <p id="heroSubtitle" class="hero-subtitle">
+        Discover beautiful places, cultures and unforgettable experiences.
+      </p>
+      <a href="#destinations" id="btnExploreDestinations" class="btn btn-primary">
+        Explore Destinations
+      </a>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       3. POPULAR DESTINATIONS
+       ====================================================================== -->
+  <section id="destinations" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Top Places</span>
+        <h2 id="destinationsHeading" class="section-title">Popular Destinations</h2>
+        <p class="section-desc">Handpicked iconic cities and scenic landscapes that capture the true essence of India.</p>
+      </div>
+
+      <div class="destinations-grid">
+        <!-- 1. Mumbai -->
+        <div id="destCardMumbai" class="dest-card">
+          <div class="dest-card-img-wrap">
+            <img src="images/mumbai.jpg" alt="Mumbai Gateway of India" class="dest-card-img" loading="lazy">
+            <span class="dest-tag">City of Dreams</span>
+          </div>
+          <div class="dest-card-body">
+            <h3 class="dest-title">Mumbai</h3>
+            <p class="dest-desc">
+              India's financial capital featuring historic colonial architecture, bustling markets, the Arabian Sea promenade, and legendary Bollywood cinema.
+            </p>
+            <button class="btn btn-outline btn-learn-more" data-dest="mumbai" id="btnLearnMumbai">Learn More</button>
+          </div>
+        </div>
+
+        <!-- 2. Goa -->
+        <div id="destCardGoa" class="dest-card">
+          <div class="dest-card-img-wrap">
+            <img src="images/goa.jpg" alt="Goa Sandy Beaches" class="dest-card-img" loading="lazy">
+            <span class="dest-tag">Beach Haven</span>
+          </div>
+          <div class="dest-card-body">
+            <h3 class="dest-title">Goa</h3>
+            <p class="dest-desc">
+              A tropical paradise famed for sunny palm-fringed beaches, centuries-old Portuguese churches, tranquil spice estates, and exciting water sports.
+            </p>
+            <button class="btn btn-outline btn-learn-more" data-dest="goa" id="btnLearnGoa">Learn More</button>
+          </div>
+        </div>
+
+        <!-- 3. Manali -->
+        <div id="destCardManali" class="dest-card">
+          <div class="dest-card-img-wrap">
+            <img src="images/manali.jpg" alt="Manali Himalayan Valleys" class="dest-card-img" loading="lazy">
+            <span class="dest-tag">Mountain Retreat</span>
+          </div>
+          <div class="dest-card-body">
+            <h3 class="dest-title">Manali</h3>
+            <p class="dest-desc">
+              A breathtaking hill station nestled in Himachal Pradesh, offering snow-capped Himalayan peaks, pine forests, hot springs, and outdoor adventures.
+            </p>
+            <button class="btn btn-outline btn-learn-more" data-dest="manali" id="btnLearnManali">Learn More</button>
+          </div>
+        </div>
+
+        <!-- 4. Kashmir -->
+        <div id="destCardKashmir" class="dest-card">
+          <div class="dest-card-img-wrap">
+            <img src="images/kashmir.jpg" alt="Kashmir Dal Lake" class="dest-card-img" loading="lazy">
+            <span class="dest-tag">Paradise on Earth</span>
+          </div>
+          <div class="dest-card-body">
+            <h3 class="dest-title">Kashmir</h3>
+            <p class="dest-desc">
+              Known for tranquil wooden houseboats floating on Dal Lake, scenic Mughal gardens, verdant valleys, and world-renowned alpine meadows.
+            </p>
+            <button class="btn btn-outline btn-learn-more" data-dest="kashmir" id="btnLearnKashmir">Learn More</button>
+          </div>
+        </div>
+
+        <!-- 5. Jaipur -->
+        <div id="destCardJaipur" class="dest-card">
+          <div class="dest-card-img-wrap">
+            <img src="images/jaipur.jpg" alt="Jaipur Pink City Palace" class="dest-card-img" loading="lazy">
+            <span class="dest-tag">The Pink City</span>
+          </div>
+          <div class="dest-card-body">
+            <h3 class="dest-title">Jaipur</h3>
+            <p class="dest-desc">
+              The regal capital of Rajasthan showcasing majestic Rajput hill forts, glorious terracotta palaces, royal museums, and vibrant colorful bazaars.
+            </p>
+            <button class="btn btn-outline btn-learn-more" data-dest="jaipur" id="btnLearnJaipur">Learn More</button>
+          </div>
+        </div>
+
+        <!-- 6. Kerala -->
+        <div id="destCardKerala" class="dest-card">
+          <div class="dest-card-img-wrap">
+            <img src="images/kerala.jpg" alt="Kerala Backwaters" class="dest-card-img" loading="lazy">
+            <span class="dest-tag">God's Own Country</span>
+          </div>
+          <div class="dest-card-body">
+            <h3 class="dest-title">Kerala</h3>
+            <p class="dest-desc">
+              A serene coastal wonderland celebrated for emerald backwater houseboats, rolling mist-covered tea plantations, and relaxing Ayurvedic wellness.
+            </p>
+            <button class="btn btn-outline btn-learn-more" data-dest="kerala" id="btnLearnKerala">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       4. POPULAR PACKAGES
+       ====================================================================== -->
+  <section id="packages" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Featured Tours</span>
+        <h2 id="packagesHeading" class="section-title">Popular Packages</h2>
+        <p class="section-desc">Explore sample itineraries crafted for memorable vacation holidays across diverse terrains.</p>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Package 1: Goa Trip -->
+        <div id="pkgCardGoa" class="pkg-card">
+          <div class="pkg-card-img-wrap">
+            <img src="images/pkg-goa.jpg" alt="Goa Trip" class="pkg-card-img" loading="lazy">
+            <span class="pkg-duration-badge">4 Days / 3 Nights</span>
+          </div>
+          <div class="pkg-card-body">
+            <h3 class="pkg-title">Goa Trip</h3>
+            <ul class="pkg-highlights">
+              <li><span>🏖️</span> Beaches (Baga, Calangute, Anjuna)</li>
+              <li><span>🏰</span> Sightseeing (Fort Aguada & Churches)</li>
+              <li><span>⛵</span> Sunset Cruise & Water Sports</li>
+            </ul>
+            <div class="pkg-footer">
+              <span class="pkg-sample-price">₹12,499 <span>/ person</span></span>
+              <button class="btn btn-primary btn-sm btn-view-pkg" data-pkg="goa" id="btnPkgGoa">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 2: Kashmir Trip -->
+        <div id="pkgCardKashmir" class="pkg-card">
+          <div class="pkg-card-img-wrap">
+            <img src="images/pkg-kashmir.jpg" alt="Kashmir Trip" class="pkg-card-img" loading="lazy">
+            <span class="pkg-duration-badge">5 Days / 4 Nights</span>
+          </div>
+          <div class="pkg-card-body">
+            <h3 class="pkg-title">Kashmir Trip</h3>
+            <ul class="pkg-highlights">
+              <li><span>🏔️</span> Mountains (Gulmarg & Pahalgam)</li>
+              <li><span>🚣</span> Dal Lake Shikara & Houseboat Stay</li>
+              <li><span>🌸</span> Mughal Gardens & Scenic Valleys</li>
+            </ul>
+            <div class="pkg-footer">
+              <span class="pkg-sample-price">₹18,999 <span>/ person</span></span>
+              <button class="btn btn-primary btn-sm btn-view-pkg" data-pkg="kashmir" id="btnPkgKashmir">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 3: Rajasthan Trip -->
+        <div id="pkgCardRajasthan" class="pkg-card">
+          <div class="pkg-card-img-wrap">
+            <img src="images/pkg-rajasthan.jpg" alt="Rajasthan Trip" class="pkg-card-img" loading="lazy">
+            <span class="pkg-duration-badge">5 Days / 4 Nights</span>
+          </div>
+          <div class="pkg-card-body">
+            <h3 class="pkg-title">Rajasthan Trip</h3>
+            <ul class="pkg-highlights">
+              <li><span>🏰</span> Mighty Forts (Amber & Nahargarh)</li>
+              <li><span>👑</span> Royal Palaces & City Museums</li>
+              <li><span>🐪</span> Cultural Folk Music & Heritage Havelis</li>
+            </ul>
+            <div class="pkg-footer">
+              <span class="pkg-sample-price">₹16,499 <span>/ person</span></span>
+              <button class="btn btn-primary btn-sm btn-view-pkg" data-pkg="rajasthan" id="btnPkgRajasthan">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       5. TRAVEL GALLERY
+       ====================================================================== -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Photo Collection</span>
+        <h2 id="galleryHeading" class="section-title">Travel Gallery</h2>
+        <p class="section-desc">Click on any image to open it in a larger view.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-caption="Sunny Tropical Coastline of Goa" id="galleryItem1">
+          <img src="images/gallery/beaches-1.jpg" alt="Goa Beach" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span>🔍 View Photo</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Majestic Snow Peaks of Manali & Himalayas" id="galleryItem2">
+          <img src="images/gallery/mountains-1.jpg" alt="Himalayan Mountains" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span>🔍 View Photo</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Historic Fortresses & Palaces of Rajasthan" id="galleryItem3">
+          <img src="images/gallery/heritage-1.jpg" alt="Rajasthan Fort" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span>🔍 View Photo</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Protected Tiger Wildlife Reserves in India" id="galleryItem4">
+          <img src="images/gallery/wildlife-1.jpg" alt="Indian Wildlife" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span>🔍 View Photo</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Golden Sunsets on the Arabian Sea, Goa" id="galleryItem5">
+          <img src="images/gallery/beaches-2.jpg" alt="Golden Beach Sunset" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span>🔍 View Photo</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Picturesque Alpine Pine Valleys in Kashmir" id="galleryItem6">
+          <img src="images/gallery/mountains-2.jpg" alt="Kashmir Green Valley" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span>🔍 View Photo</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Intricate Classical Architecture & Culture" id="galleryItem7">
+          <img src="images/gallery/culture-1.jpg" alt="Indian Cultural Heritage" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span>🔍 View Photo</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-caption="Lush Green Backwaters & Nature of Kerala" id="galleryItem8">
+          <img src="images/nature-tourism.jpg" alt="Kerala Lush Nature" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <span>🔍 View Photo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       6. TRAVEL TIPS
+       ====================================================================== -->
+  <section id="tips" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Helpful Advice</span>
+        <h2 id="tipsHeading" class="section-title">Travel Tips</h2>
+        <p class="section-desc">Essential guidelines to ensure a safe, smooth, and enjoyable trip across India.</p>
+      </div>
+
+      <div class="tips-grid">
+        <!-- Tip 1 -->
+        <div id="tipCard1" class="tip-card">
+          <div class="tip-icon">☀️</div>
+          <div class="tip-content">
+            <h3 class="tip-title">Check Weather</h3>
+            <p class="tip-text">Check the weather before travelling to pack suitable clothing for tropical plains or cold mountains.</p>
+          </div>
+        </div>
+
+        <!-- Tip 2 -->
+        <div id="tipCard2" class="tip-card">
+          <div class="tip-icon">📄</div>
+          <div class="tip-content">
+            <h3 class="tip-title">Essential Documents</h3>
+            <p class="tip-text">Carry important documents like government photo IDs, permits, hotel vouchers, and keep digital copies.</p>
+          </div>
+        </div>
+
+        <!-- Tip 3 -->
+        <div id="tipCard3" class="tip-card">
+          <div class="tip-icon">📞</div>
+          <div class="tip-content">
+            <h3 class="tip-title">Emergency Contacts</h3>
+            <p class="tip-text">Keep emergency contacts handy including local police (112), medical helplines, and family numbers.</p>
+          </div>
+        </div>
+
+        <!-- Tip 4 -->
+        <div id="tipCard4" class="tip-card">
+          <div class="tip-icon">🙏</div>
+          <div class="tip-content">
+            <h3 class="tip-title">Respect Local Culture</h3>
+            <p class="tip-text">Respect local culture, traditions, and dress codes when visiting sacred temples, monuments, and rural villages.</p>
+          </div>
+        </div>
+
+        <!-- Tip 5 -->
+        <div id="tipCard5" class="tip-card">
+          <div class="tip-icon">🌱</div>
+          <div class="tip-content">
+            <h3 class="tip-title">Keep Clean</h3>
+            <p class="tip-text">Keep your surroundings clean by disposing of trash responsibly and avoiding single-use plastic waste.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       7. ABOUT EXPLORE BHARAT
+       ====================================================================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-box" id="aboutBox">
+        <span class="section-badge">Our Mission</span>
+        <h2 id="aboutHeading" class="section-title">About Explore Bharat</h2>
+        <p class="about-lead-text">
+          Explore Bharat is a simple travel and tourism website created to help people discover beautiful destinations across India.
+        </p>
+        <p class="about-sub-text">
+          From the serene backwaters of Kerala and sun-drenched shores of Goa to the majestic snow peaks of Kashmir and historic forts of Rajasthan, our goal is to provide simple, reliable, and accessible destination information for students, solo backpackers, and families alike.
+        </p>
+        
+        <div class="about-highlights">
+          <div class="about-highlight-item">
+            <span class="hl-number">6+</span>
+            <span class="hl-label">Popular States</span>
+          </div>
+          <div class="about-highlight-item">
+            <span class="hl-number">100%</span>
+            <span class="hl-label">Free Information</span>
+          </div>
+          <div class="about-highlight-item">
+            <span class="hl-number">Static</span>
+            <span class="hl-label">Zero Server Dependency</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       8. CONTACT SECTION
+       ====================================================================== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Get in Touch</span>
+        <h2 id="contactHeading" class="section-title">Contact Us</h2>
+        <p class="section-desc">Have a question or looking for travel tips? Send us a message below.</p>
+      </div>
+
+      <div class="contact-card" id="contactCard">
+        <!-- Success message container (initially hidden) -->
+        <div id="contactSuccessMsg" class="alert-success" style="display: none;">
+          <strong>Thank you for contacting Explore Bharat!</strong>
+          <p id="successDetailText">We have received your message and will get back to you soon.</p>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <!-- Name Field -->
+          <div class="form-group">
+            <label for="contactName" class="form-label">Your Name <span class="required">*</span></label>
+            <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+            <span class="error-text" id="nameError"></span>
+          </div>
+
+          <!-- Email Field -->
+          <div class="form-group">
+            <label for="contactEmail" class="form-label">Email Address <span class="required">*</span></label>
+            <input type="email" id="contactEmail" name="email" class="form-input" placeholder="e.g. rahul@example.com" required>
+            <span class="error-text" id="emailError"></span>
+          </div>
+
+          <!-- Destination Field -->
+          <div class="form-group">
+            <label for="contactDestination" class="form-label">Destination of Interest <span class="required">*</span></label>
+            <select id="contactDestination" name="destination" class="form-input" required>
+              <option value="">-- Select a Destination --</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Goa">Goa</option>
+              <option value="Manali">Manali</option>
+              <option value="Kashmir">Kashmir</option>
+              <option value="Jaipur">Jaipur</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Other">Other Destination</option>
+            </select>
+            <span class="error-text" id="destError"></span>
+          </div>
+
+          <!-- Message Field -->
+          <div class="form-group">
+            <label for="contactMessage" class="form-label">Your Message <span class="required">*</span></label>
+            <textarea id="contactMessage" name="message" class="form-input form-textarea" rows="4" placeholder="Tell us what you would like to know..." required></textarea>
+            <span class="error-text" id="messageError"></span>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" id="btnSubmitContact" class="btn btn-primary btn-submit">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       9. FOOTER
+       ====================================================================== -->
+  <footer id="mainFooter" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <div class="footer-brand">
+            <span class="footer-brand-name">Explore Bharat</span>
+          </div>
+          <p class="footer-text">
+            Explore Bharat – Explore India. An educational, student-friendly static tourism information portal showcasing the marvels of India.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#tips">Travel Tips</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact Information -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Information</h4>
+          <ul class="footer-contact-list">
+            <li>📍 New Delhi, India</li>
+            <li>✉️ info@explorebharat.example</li>
+            <li>📞 +91 98765 43210</li>
+            <li>⏰ Mon - Sat: 9:00 AM - 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright Notice -->
+      <div class="footer-bottom">
+        <p>© 2026 Explore Bharat. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       DESTINATION DETAIL MODAL (Pop-up)
+       ====================================================================== -->
+  <div id="destModal" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <button id="destModalClose" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <img id="destModalImg" src="images/mumbai.jpg" alt="Destination" class="modal-hero-img">
+      <div class="modal-content">
+        <h3 id="destModalTitle" class="modal-title">Destination Name</h3>
+        <p id="destModalTagline" class="modal-tagline">Tagline</p>
+        <p id="destModalDesc" class="modal-desc">Description text</p>
+        
+        <div class="modal-info-box">
+          <div class="modal-info-item">
+            <strong>🗓️ Best Time to Visit:</strong>
+            <span id="destModalBestTime">October - March</span>
+          </div>
+          <div class="modal-info-item">
+            <strong>🌟 Key Attractions:</strong>
+            <span id="destModalAttractions">Attractions list</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       PACKAGE DETAIL MODAL (Pop-up)
+       ====================================================================== -->
+  <div id="pkgModal" class="modal-backdrop" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <button id="pkgModalClose" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <img id="pkgModalImg" src="images/pkg-goa.jpg" alt="Package" class="modal-hero-img">
+      <div class="modal-content">
+        <h3 id="pkgModalTitle" class="modal-title">Package Name</h3>
+        <span id="pkgModalDuration" class="pkg-duration-pill">Duration</span>
+        
+        <h4 class="modal-subheading">Itinerary Highlights</h4>
+        <ul id="pkgModalList" class="modal-list">
+          <!-- Dynamic itinerary items -->
+        </ul>
+        
+        <div class="modal-price-bar">
+          <div>
+            <span class="price-label">Sample Package Rate:</span>
+            <span id="pkgModalPrice" class="modal-price-val">₹12,499 / person</span>
+          </div>
+          <button id="pkgModalGotItBtn" class="btn btn-primary btn-sm">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       IMAGE LIGHTBOX MODAL (Gallery zoom)
+       ====================================================================== -->
+  <div id="lightboxModal" class="modal-backdrop lightbox-backdrop" aria-hidden="true" role="dialog">
+    <div class="lightbox-content">
+      <button id="lightboxClose" class="lightbox-close-btn" aria-label="Close lightbox">&times;</button>
+      <img id="lightboxImg" src="" alt="Zoomed travel view" class="lightbox-img">
+      <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
